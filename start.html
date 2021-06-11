@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="twitter:site" content="@metroui">
+    <meta name="twitter:creator" content="@pimenov_sergey">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Metro 4 Components Library">
+    <meta name="twitter:description" content="Metro 4 is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system, extensive prebuilt components, and powerful plugins  .">
+    <meta name="twitter:image" content="https://metroui.org.ua/images/m4-logo-social.png">
+
+    <meta property="og:url" content="https://metroui.org.ua/index.html">
+    <meta property="og:title" content="Metro 4 Components Library">
+    <meta property="og:description" content="Metro 4 is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with responsive grid system, extensive prebuilt components, and powerful plugins  .">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://metroui.org.ua/images/m4-logo-social.png">
+    <meta property="og:image:secure_url" content="https://metroui.org.ua/images/m4-logo-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+
+    <meta name="author" content="Sergey Pimenov">
+    <meta name="description" content="The most popular HTML, CSS, and JS library in Metro style.">
+    <meta name="keywords" content="HTML, CSS, JS, Metro, CSS3, Javascript, HTML5, UI, Library, Web, Development, Framework">
+
+    <link href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css?ver=@@b-version" rel="stylesheet">
+    <link href="start.css" rel="stylesheet">
+
+    <title>FABLAB IMERIR</title>
+</head>
+<body class="bg-dark fg-white h-vh-100 m4-cloak">
+
+    <div class="container-fluid start-screen h-100">
+        <h1 class="start-screen-title">FabLab</h1>
+
+        <div class="tiles-area clear">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Télémétrie">
+                <div data-role="tile" class="bg-cyan fg-white" data-size="wide">
+                    <span>//Todo Température ext</span>
+                    <span class="branding-bar">Température Exterieur</span>
+                </div>
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                    <span>//Todo Température int</span>
+                    <span class="branding-bar">Température Interieur</span>
+                </div>
+                <div data-role="tile" class="bg-cyan fg-white" data-size="wide">
+                    <span>//Todo Vitesse du vent</span>
+                    <span class="branding-bar">Vitesse du vent</span>
+                </div>
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                    <span>//Todo Humidité</span>
+                    <span class="branding-bar">Humidité Exterieur</span>
+                </div>
+                
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Graphique Télémétrie">
+                <div data-role="tile" data-cover="IMAGE">
+                    <span class="branding-bar">Température Exterieur 24H</span>
+                </div>
+                <div data-role="tile" data-cover="IMAGE">
+                    <span class="branding-bar">Température Interieur 24H</span>
+                </div>
+                <div data-role="tile" data-cover="IMAGE">
+                    <span class="branding-bar">Vitesse du vent 24H</span>
+                </div>
+                <div data-role="tile" data-cover="IMAGE">
+                    <span class="branding-bar">Humidité Exterieur 24H</span>
+                </div>
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Twitter" data-size="wide">
+                <!-- <blockquote class="twitter-tweet">
+                    <p lang="fr" dir="ltr">IMERIR et les actualités du numérique - Perpignan le 09/06/2021<a href="https://twitter.com/cciperpignan?ref_src=twsrc%5Etfw">@cciperpignan</a> 
+                    <a href="https://twitter.com/CCIoccitanie?ref_src=twsrc%5Etfw">@CCIoccitanie</a> 
+                    <a href="https://twitter.com/ccifrance?ref_src=twsrc%5Etfw">@ccifrance</a> 
+                    <a href="https://twitter.com/Occitanie?ref_src=twsrc%5Etfw">@Occitanie</a> 
+                    <a href="https://twitter.com/hashtag/robotique?src=hash&amp;ref_src=twsrc%5Etfw">#robotique</a> 
+                    <a href="https://twitter.com/hashtag/informatique?src=hash&amp;ref_src=twsrc%5Etfw">#informatique</a> 
+                    <a href="https://twitter.com/hashtag/cybers%C3%A9curit%C3%A9?src=hash&amp;ref_src=twsrc%5Etfw">#cybersécurité</a>
+                    <a href="https://twitter.com/hashtag/IoT?src=hash&amp;ref_src=twsrc%5Etfw">#IoT</a> 
+                    <a href="https://twitter.com/hashtag/IntelligenceArtificielle?src=hash&amp;ref_src=twsrc%5Etfw">#IntelligenceArtificielle</a>
+                    <a href="https://t.co/xGQtY7MLnu">https://t.co/xGQtY7MLnu</a>
+                </p>&mdash; IMERIR (@imerir) <a href="https://twitter.com/imerir/status/1402553535238180865?ref_src=twsrc%5Etfw">June 9, 2021</a>
+                </blockquote> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                <div id=”twitter_update_list”></div>
+                    <script type=”text/javascript” src=”http://twitter.com/javascripts/blogger.js”>
+                    </script>
+                    <script type=”text/javascript” src=”http://twitter.com/statuses/user_timeline/webdesigndev.json?callback=twitterCallback2&count=1″>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="start.js"></script>
+
+</body>
+</html>
