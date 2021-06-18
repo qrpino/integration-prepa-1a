@@ -56,7 +56,7 @@ function csvLastValue($path, $unitType)
             <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Télémétrie">
                 <div data-role="tile" class="bg-cyan fg-white" data-size="medium">
                     <span>//Todo Température ext</span>
-                    <span class="branding-bar">Température Exterieur</span>
+                    <span class="branding-bar">Température Ext</span>
                 </div>
                 <div data-role="tile" class="bg-orange fg-white" data-size="medium">
                     <span>
@@ -64,7 +64,7 @@ function csvLastValue($path, $unitType)
                         csvLastValue("data-csv/data-fablab-thermo-int.csv", "°C");
                         ?>
                     </span>
-                    <span class="branding-bar">Température Intérieure</span>
+                    <span class="branding-bar">Température Int</span>
                 </div>
                 <div data-role="tile" class="bg-cyan fg-white" data-size="medium">
                     <span>
@@ -80,40 +80,51 @@ function csvLastValue($path, $unitType)
                         csvLastValue("data-csv/data-fablab-weather-hydro.csv", "% d'humidité");
                         ?>
                     </span>
-                    <span class="branding-bar">Humidité Exterieur</span>
+                    <span class="branding-bar">Humidité Ext</span>
                 </div>
                 <div data-role="tile" class="bg-orange fg-white" data-size="medium">
                     <span>
                         <?php
-                        csvLastValue("data-csv/data-fablab-weather-pression.csv", "");
+                        csvLastValue("data-csv/data-fablab-weather-pression.csv", "hPa");
                         ?>
                     </span>
-                    <span class="branding-bar">Pression athmosphérique</span>
+                    <span class="branding-bar">Pression Atmo</span>
+                </div>
+                <div data-role="tile" class="bg-orange fg-white" data-size="medium">
+                    <span>
+                        <?php
+                        //csvLastValue("data-csv/data-fablab-weather-pression.csv", "hPa");
+                        ?>
+                    </span>
+                    <span class="branding-bar">Personnes FabLab</span>
                 </div>
 
             </div>
 
-            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Graphique Télémétrie">
-                <div data-role="tile" data-cover="IMAGE" data-size="wide">
-                    <span class="branding-bar">Température Exterieur 24H</span>
-                </div>
-                <div data-role="tile" data-cover="IMAGE" data-size="wide">
-                    <span class="branding-bar">Température Interieur 24H</span>
-                </div>
-                <div data-role="tile" data-cover="IMAGE" data-size="wide">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Graphiques Télémétrie">
+                <a data-role="tile" data-cover="graph/thermo-ext.png" data-size="wide" href="graph/thermo-ext.png">
+                    <span class="branding-bar">Température Extérieure 24H</span>
+                </a>
+                <a data-role="tile" data-cover="graph/thermo-int.png" data-size="wide" href="graph/thermo-int.png">
+                    <span class="branding-bar">Température Intérieure 24H</span>
+                </a>
+                <a data-role="tile" data-cover="graph/wind-graph.png" data-size="wide" href="graph/wind-graph.png">
                     <span class="branding-bar">Vitesse du vent 24H</span>
-                </div>
-                <div data-role="tile" data-cover="graph/hydro-graph.png" data-size="wide">
-                    <span class="branding-bar">
+                </a>
+                <a data-role="tile" data-cover="graph/hydro-graph.png" data-size="wide" href="graph/hydro-graph.png">
+                    <span class="branding-bar">Taux d'humidité</span>
                     </span>
-                </div>
-                <div data-role="tile" data-cover="graph/pression-graph.png" data-size="wide">
-                    <span class="branding-bar">
+                </a>
+                <a data-role="tile" data-cover="graph/pression-graph.png" data-size="wide" href="graph/pression-graph.png">
+                    <span class="branding-bar">Pression </span>
                     </span>
-                </div>
+                </a>
+                <a data-role="tile" data-cover="graph/personnes-graph.png" data-size="wide" href="graph/personnes-graph.png">
+                    <span class="branding-bar">Personnes au sein du FabLab</span>
+                </a>
             </div>
 
-            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Twitter" data-size="large">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Twitter" data-size="wide">
                 <a class="twitter-timeline" data-lang="fr" data-width="500" data-height="800" data-theme="light" href="https://twitter.com/imerir?ref_src=twsrc%5Etfw">Tweets by imerir</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
