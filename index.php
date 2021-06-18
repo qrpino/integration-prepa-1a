@@ -4,11 +4,8 @@ function csvLastValue($path, $unitType)
     $dateTimeFormat = 'Y-m-d H:i:s';
     $handle = fopen($path, "r");
     $data = fgetcsv($handle);
-   // $timestamp = $data[count($data) - 2];
-   // $date = new \DateTime();
-   // $date->setTimestamp($timestamp);
     $value = $data[count($data) - 1];
-    echo (/*$date->format($dateTimeFormat) . " " . */ $value . $unitType);
+    echo ($value . $unitType);
     fclose($handle);
 };
 ?>
@@ -134,7 +131,7 @@ function csvLastValue($path, $unitType)
 
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script src="start.js"></script>
-
+    <script>setInterval(function(){window.location.reload()}, 60000);</script>
 </body>
 
 </html>
