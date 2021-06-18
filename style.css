@@ -1,0 +1,30 @@
+.html, body {
+    background-color: #fca629;
+}
+
+#affichage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#col1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.value {
+    font-size: 22px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #ffffff;
+    opacity: 0.9;
+    background-color: #5d66c1;
+    margin: 10px;
+    text-align: center;
+    border: 5px solid #4c4c4c;
+}
