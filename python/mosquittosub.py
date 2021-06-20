@@ -7,8 +7,8 @@ from datetime import datetime
 import time
 
 # Configuration 
-MQTT_BROKER = "10.7.5.189"
-MQTT_PORT   = 1883
+MQTT_BROKER = "IP"
+MQTT_PORT   = "PORT"
 KEEP_ALIVE  = 20 # interval en seconde
 
 def on_log( client, userdata, level, buf ):
