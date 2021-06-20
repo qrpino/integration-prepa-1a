@@ -18,13 +18,13 @@ VL53L0X_RangingMeasurementData_t measure1;
 VL53L0X_RangingMeasurementData_t measure2;
 
 EspMQTTClient client(
-  "IMERIR Fablab",
-  "imerir66",
-  "10.7.5.189",  // MQTT Broker server ip
+  "SSID",
+  "PASSWORD",
+  "MQTT-SERVER-IP",  // MQTT Broker server ip
   "",   // Can be omitted if not needed
   "",   // Can be omitted if not needed
   "InOut",     // Client name that uniquely identify your device
-  1883              // The MQTT port, default to 1883. this line can be omitted
+  "PORT"              // The MQTT port, default to 1883. this line can be omitted
 );
 
 int distance1, distance2;
